@@ -1,2 +1,3 @@
 # boidSim
-Boid's flocking algorithm simulator using pygame
+Boids flocking algorithm simulator using pygame.
+
