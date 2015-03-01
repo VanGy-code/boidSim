@@ -45,7 +45,11 @@ def main():
 			key = pygame.key.get_pressed()
 			if key[pygame.K_d]:
 				mDrive = True
-				mousePos = pygame.mouse.get_pos()		
+				mousePos = pygame.mouse.get_pos()
+			if key[pygame.K_s]:
+				m1,m3 = -3, -1
+			if key[pygame.K_f]:
+				m1, m3 = 1, 1
 		
 	
 		for boid in boidList:

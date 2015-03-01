@@ -66,7 +66,8 @@ def boidBounds(boid, position, width, height):
 def mouseDrive(boid, mDrive, mousePos):
 	
 	if mDrive:
-		driveVector = [(x-y)/100 for x,y in zip(tuple(mousePos), boid.position)]
+		driveVector = [(x-y)/50 for x,y in zip(tuple(mousePos), boid.position)]
 	else:
 		driveVector = (0,0)
+	mDrive = False
 	return tuple(driveVector)	
